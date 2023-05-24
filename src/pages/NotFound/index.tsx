@@ -1,8 +1,8 @@
 
-const index = () => {
+const NotFound = () => {
   return (
-    <div>index</div>
+    <div>NotFound</div>
   )
 }
 
-export default index
+export default NotFound

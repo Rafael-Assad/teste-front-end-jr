@@ -10,7 +10,7 @@ const Routes = () => {
         element={ <Home/> }
       />
 
-      <Route path='/about'
+      <Route path='*'
         element={ <NotFound/> }
       />
     </Switch>
