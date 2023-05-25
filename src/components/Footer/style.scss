@@ -1,0 +1,58 @@
+@use "../../styles/variables/colors";
+
+footer{
+    width: 100%;
+
+    color: colors.$white-text-highlight;
+    background-color: colors.$footer-background;
+    border: 1px solid black;
+
+    .footer-menus{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        section{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            nav{
+                li{
+                    a{
+                        color: colors.$white-text-highlight;
+    
+                        &:hover{
+                            color: colors.$primary-color;
+                        }
+                    }
+                }
+            }
+
+            &.payment-methods{
+                border: 1px solid white;
+                width: 200px;
+                .payment-methods-icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .footer-disclaimer{
+        padding: 15px;
+        border-top: 1px solid colors.$white-text-highlight;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .signature-logos{
+            width: 20vw;
+        }
+    }
+}

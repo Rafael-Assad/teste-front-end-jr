@@ -1,7 +1,9 @@
+@use "../../styles/variables/colors";
+
 $width: 60vw;
 
 header{
-    width: 100vw;
+    width: 100%;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -39,6 +41,10 @@ header{
                 width: 14%;
                 display: flex;
                 align-items: center;
+
+                a{
+                    color:colors.$white-text-highlight
+                }
             }
 
         }

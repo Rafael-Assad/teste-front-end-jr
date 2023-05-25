@@ -1,7 +1,28 @@
+import { HTMLAttributes } from "react";
+import { Link } from "react-router-dom";
+import { MenuItem } from "../../types";
 
-const Menu = () => {
+import "./style.scss"
+
+interface MenuProps extends HTMLAttributes<HTMLMenuElement> {
+  menuInfo: MenuItem[];
+}
+
+const Menu = ({ menuInfo, ...rest}: MenuProps) => {
   return (
-    <div>Menu</div>
+    <nav>
+      <ul>
+        {menuInfo.map( menuItem => {
+          return (
+            <li>
+              <Link to={menuItem.link} >
+                {menuItem.label}
+              </Link>
+            </li>
+          )
+        } )}
+      </ul>
+    </nav>
   )
 }
 

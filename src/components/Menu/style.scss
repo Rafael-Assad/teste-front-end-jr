@@ -1,0 +1,12 @@
+@use "../../styles/variables/colors";
+
+nav{
+    ul{
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

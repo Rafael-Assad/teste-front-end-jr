@@ -8,11 +8,14 @@
 }
 
 html, body, #root{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #root{
+  font-family: fonts.$poppins;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
 }

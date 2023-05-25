@@ -1,4 +1,4 @@
-import LogoImg  from "../../assets/icons/Logo.svg"
+import LogoImg  from "../../assets/logos/Logo.svg"
 import ShieldImg  from "../../assets/icons/ShieldCheck.svg"
 import TruckImg  from "../../assets/icons/Truck.svg"
 import CreditCardImg  from "../../assets/icons/CreditCard.svg"
@@ -8,8 +8,6 @@ import HeartImg  from "../../assets/icons/Heart.svg"
 import UserCircleImg  from "../../assets/icons/UserCircle.svg"
 import ShoppingCartImg  from "../../assets/icons/ShoppingCart.svg"
 import CrownImg from "../../assets/icons/CrownSimple.svg"
-
-
 
 import "./style.scss"
 
