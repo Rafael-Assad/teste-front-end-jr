@@ -1,0 +1,48 @@
+@use "../../styles/variables/colors";
+
+.item-card-container{
+    width: 27rem;
+    padding: 1.6rem;
+    padding-top: 3.2rem;
+    background: colors.$white-background;
+    box-shadow: 0px 3px 19px rgba(0, 0, 0, 0.22);
+    border-radius: 1rem;
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: colors.$drak-gray;
+    }
+
+    .regular-price{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: colors.$light-gray;
+        text-decoration: line-through;
+    }
+
+    .discount-price{
+        font-size: 2rem;
+        font-weight: 700;
+        color: colors.$drak-gray;
+    }
+
+    .payments-details{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: colors.$drak-gray;
+    }
+
+    .free-delivery{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: colors.$primary-color;
+    }
+
+
+    button{
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+}
