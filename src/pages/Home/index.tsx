@@ -1,7 +1,11 @@
+import Banner from "../../components/Banner"
+import "./style.scss"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <main>
+      <Banner/>
+    </main>
   )
 }
 

@@ -1,0 +1,28 @@
+@use "../../styles/variables/colors";
+
+.banner{
+    width: 100vw;
+    height: 35rem;
+    padding: 5rem 20rem;
+
+    color: colors.$white-text-highlight;
+    object-fit: cover;
+    background-image: linear-gradient(to bottom, #0000, #0005, #000),url("../../assets/backgroundImages/Sales.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h2, h3{
+        color: colors.$white-text-highlight;
+        font-weight: 600;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+
+    h3{
+        margin-bottom: 2.5rem;
+        font-size: 3rem;
+    }
+}
