@@ -1,4 +1,6 @@
+@use '../../styles/variables/colors';
+
 main{
     min-height: 60vh;
-    // border: 1px solid red;
+    background-color: colors.$white-background;
 }

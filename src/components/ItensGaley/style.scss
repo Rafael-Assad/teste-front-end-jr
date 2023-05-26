@@ -1,6 +1,49 @@
+@use "../../styles/variables/colors";
+
 .itens-galery-container{
+    width: 100%;
+    margin-bottom: 1.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5vw
+    .itens-filter{
+        width: 80%;
+        margin-bottom: 1.5rem;
+        .galery-title{
+            color: colors.$primary-color;
+            font-size: 3rem;
+        }
+
+        .see-all{
+            color: colors.$dark-gray;
+            font-size: 1.5rem;
+        }
+
+        .see-all, .galery-title{
+            font-weight: 700;
+            text-align: center;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li{
+                flex-grow: 1;
+                text-align: center;
+                padding: 1.2rem;
+                border: 1px solid colors.$lighter-gray
+            }
+        }
+    }
+
+    .itens-galery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
 }
