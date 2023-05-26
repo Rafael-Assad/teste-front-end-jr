@@ -1,0 +1,25 @@
+
+.products-slider{
+    position: relative;
+    .itens-galery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+    .slider-arrows{
+        .left-arrow, .right-arrow{
+            position: absolute;
+            top: 50%;
+
+        }
+        .left-arrow{
+            left: 0;
+        }
+        
+        .right-arrow{
+            right: 0;
+        }
+    }
+}

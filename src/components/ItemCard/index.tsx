@@ -4,31 +4,42 @@ import Button from "../Button"
 import ProductModal from "../ProductModal"
 
 import "./style.scss"
+import { ProductDeatils } from "../../types"
 
-const ItemCard = () => {
+
+const ItemCard = ({productName, descriptionShort, photo,price}: ProductDeatils) => {
   const [showModal, setShowModal] = useState<boolean>(false)
 
   const toogleModal = () => setShowModal(!showModal)
 
+  const discountPrice = price - (price * 0.1)
+  const parcelValue = price/2
+
   return (
     <>
       <div onClick={toogleModal} className="item-card-container">
-        <img src="*" alt="Imagem do produto" />
+        <img src={photo} alt="Imagem do produto" />
 
         <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          {productName}
         </h3>
 
         <p className="regular-price">
-          RS Preço antigo
+          {price.toLocaleString('pt-BR', 
+            {style: "currency", currency: "BRL"}
+          )}
         </p>
 
         <p className="discount-price">
-          RS Preço Novo
+          {discountPrice.toLocaleString('pt-BR', 
+            {style: "currency", currency: "BRL"}
+          )}
         </p>
 
         <p className="payments-details">
-          Condiçoes de pagamento
+          ou 2x de {parcelValue.toLocaleString('pt-BR', 
+            {style: "currency", currency: "BRL"}
+          )} sem juros
         </p>
 
         <p className="free-delivery">
@@ -38,7 +49,13 @@ const ItemCard = () => {
         <Button buttonName="COMPRAR" />
       </div>
 
-      <ProductModal show={showModal} toggleModal={toogleModal}/>
+      <ProductModal show={showModal} 
+        toggleModal={toogleModal}
+        productName={productName}
+        productDetails={descriptionShort}
+        finalPrice={discountPrice}
+        photo={photo}
+      />
     </>
   )
 }
