@@ -17,10 +17,10 @@ const Header = () => {
       <div className="calltoaction-container">
         <span>
           <img src={ShieldImg} alt="" /> 
-          Compra <strong>100% segura</strong>
+          Compra <strong> 100% segura</strong>
         </span>
 
-        <span>
+        <span className="central-icon">
           <img src={TruckImg} alt="" />
           <strong>Frete grátis</strong> acima de R$ 200
         </span>
@@ -36,12 +36,15 @@ const Header = () => {
           <img src={LogoImg} alt="Logo" />
         </figure>
 
-        <span>
-          <input type="text" />
-          <img src={MagnifyingGlassImg} alt="" />
+        <span className="search-box">
+          <input type="text" placeholder="O que você está buscando?"/>
+
+          <button>
+            <img src={MagnifyingGlassImg} alt="" />
+          </button>
         </span>
 
-        <span>
+        <span className="user-icons">
           <img src={BoxImg} alt="" />
           <img src={HeartImg} alt="" />
           <img src={UserCircleImg} alt="" />
@@ -51,19 +54,19 @@ const Header = () => {
 
       <nav>
         <ul>
-          <li>Todas as Categorias</li>
+          <li>TODAS AS CATEGORIAS</li>
 
-          <li>Supermercado</li>
+          <li>SUPERMERCADO</li>
 
-          <li>Livros</li>
+          <li>LIVROS</li>
 
-          <li>Moda</li>
+          <li>MODA</li>
 
-          <li>Lançamentos</li>
+          <li>LANÇAMENTOS</li>
 
-          <li>Ofertas do dia</li>
+          <li>OFERTAS DO DIA</li>
 
-          <li><img src={CrownImg} alt="" /> Assinatura</li>
+          <li><img src={CrownImg} alt="" /> ASSINATURA</li>
         </ul>
       </nav>
     </header>
