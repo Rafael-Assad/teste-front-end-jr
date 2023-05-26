@@ -1,0 +1,52 @@
+@use "../../styles/variables/colors";
+
+.newsletter-sign-box-container{
+    height: 25rem;
+    width: 38rem;
+    padding: 3.9rem 2.9rem;
+    border-radius: 1rem;
+
+    background-color: colors.$white-background;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+        color: colors.$dark-gray;
+
+        &.main-catchphrase{
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 2.6rem;
+    
+            strong{
+            font-size: 2.1rem;
+            font-weight: 700;
+            }
+        }
+
+        &.details{ 
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 300;
+        }
+    }
+
+    .subscribe-area{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input{
+            margin-right: 0.9rem;
+            padding: 1.8rem 2.5rem;
+            border: 1px solid colors.$dark-input-border;
+            border-radius: 0.4rem;
+            flex-grow: 1;
+        }
+    }
+}

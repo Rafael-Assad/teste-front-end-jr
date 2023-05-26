@@ -1,7 +1,10 @@
+import Menu from "../Menu"
+import NewsLetterSignBox from "../NewsLetterSignBox"
+
+import { AboutMenuMock, InfosMenuMock } from "./MenusMock"
+
 import EcoverseImg from "../../assets/logos/ecoverse.svg"
 import LogoInverseImg from "../../assets/logos/LogoInverse.svg"
-import Menu from "../Menu"
-import { AboutMenuMock, InfosMenuMock } from "./MenusMock"
 
 import FacebookIcon from "../../assets/icons/Facebook.svg"
 import InstagramIcon from "../../assets/icons/Instagram.svg"
@@ -56,7 +59,9 @@ const Footer = () => {
           </span>
         </section>
 
-        <section>newsletter</section>
+        <section>
+          <NewsLetterSignBox/>
+        </section>
       </div>
 
       <div className="footer-disclaimer">

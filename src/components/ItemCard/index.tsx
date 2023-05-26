@@ -8,7 +8,7 @@ const ItemCard = () => {
       <img src="*" alt="Imagem do produto" />
 
       <h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </h3>
 
       <p className="regular-price">
