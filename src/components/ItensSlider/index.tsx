@@ -5,15 +5,20 @@ import RightArrowIcon from "../../assets/icons/rightArrow.svg"
 import "./style.scss"
 
 interface ItemsSliderProps {
-  children?: ReactNode;
+  children?: ReactNode[];
 }
 
 const ItemsSlider = ({children}:ItemsSliderProps) => {
+  let selectedItens
+
+  if(children){
+    selectedItens = children.slice(0, 4)
+  }
 
   return (
     <div className="products-slider">
         <div className='itens-galery'>
-        {children}
+        {selectedItens}
         </div>
 
     <div className="slider-arrows">

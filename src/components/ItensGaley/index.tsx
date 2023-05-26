@@ -7,11 +7,10 @@ import ItemsSlider from '../ItensSlider';
 
 interface ItensGaleryProps {
   showFilters: boolean;
-  teste: ProductDeatils[]
+  productList: ProductDeatils[]
 }
 
-const ItensGalery = ({showFilters, teste}: ItensGaleryProps) => {
-  console.table(teste)
+const ItensGalery = ({showFilters,  productList}: ItensGaleryProps) => {
 
 
   return (
@@ -34,7 +33,7 @@ const ItensGalery = ({showFilters, teste}: ItensGaleryProps) => {
       </div>
 
       <ItemsSlider >
-        {teste.map((product, index) =>{
+        {productList.map((product, index) =>{
           return (
             <ItemCard productName={product.productName}
               descriptionShort={product.descriptionShort}
