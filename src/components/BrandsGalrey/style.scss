@@ -1,0 +1,18 @@
+@use "../../styles/variables/colors";
+
+.brands-galery{
+
+    h3{
+        color: colors.$primary-color;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .brand-bubble-icon-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+
+}

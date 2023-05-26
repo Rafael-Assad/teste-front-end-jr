@@ -1,0 +1,18 @@
+@use "../../styles/variables/colors";
+
+.brand-bubble-icon{
+    width: 21.1rem;
+    height: 21.1rem;
+    border-radius: 50%;
+
+    background-color: colors.$white-background;
+
+    box-shadow: 0px 7px 20px #0002;
+
+    figure{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
