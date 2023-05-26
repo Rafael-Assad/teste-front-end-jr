@@ -1,9 +1,39 @@
+@use "../../styles/variables/colors";
+
 .categories-buttons{
+    width: 100%;
+    margin-bottom: 10rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     figure{
         padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        figcaption{
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: colors.$category-title-color;
+            position:absolute;
+            bottom: -4.5rem;
+            img{
+                width: 6.1rem;
+                height: 6.1rem;
+            }
+        }
+    }
+
+    .category-card{
+        width: 12.8rem;
+        height: 12.8rem;
+        padding: 1rem;
+        position: relative;
+        border-radius: 1rem;
+        background-color: colors.$white-background-category;
+        box-shadow: 0px 4px 11px #00000021;
+        cursor: pointer;
     }
 } 

@@ -2,20 +2,35 @@
 
 .itens-galery-container{
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 6.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .itens-filter{
-        width: 80%;
-        margin-bottom: 1.5rem;
+        width: 100%;
+        margin-bottom: 1.7rem;
+        .title-area{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            hr{
+                width: 30%;
+                height: 1px;
+                background-color: colors.$hr-color;
+                border: none;
+            }
+        }
+
         .galery-title{
+            margin: 0 6rem;
             color: colors.$primary-color;
             font-size: 3rem;
         }
 
         .see-all{
+            margin-bottom: 3.5rem;
             color: colors.$dark-gray;
             font-size: 1.5rem;
         }
@@ -35,7 +50,11 @@
                 flex-grow: 1;
                 text-align: center;
                 padding: 1.2rem;
-                border: 1px solid colors.$lighter-gray
+                border: 1px solid colors.$lighter-gray;
+
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: colors.$categories-menu-color;
             }
         }
     }

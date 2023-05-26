@@ -11,14 +11,14 @@ import "./style.scss"
 const CategoriesButton = () => {
   return (
     <div className="categories-buttons">
-      <span>
+      <span className="category-card">
         <figure>
           <img src={DevicesIcon} alt=""/>
           <figcaption>Tecnologia</figcaption>
         </figure>
       </span>
 
-      <span>
+      <span className="category-card">
         <figure>
           <img src={MarketIcon} alt=""/>
           <figcaption>
@@ -27,7 +27,7 @@ const CategoriesButton = () => {
         </figure>
       </span>
 
-      <span>
+      <span className="category-card">
         <figure>
           <img src={DrinksIcon} alt=""/>
           <figcaption>
@@ -36,7 +36,7 @@ const CategoriesButton = () => {
         </figure>
       </span>
 
-      <span>
+      <span className="category-card">
         <figure>
           <img src={ToolsIcon} alt=""/>
           <figcaption>
@@ -45,7 +45,7 @@ const CategoriesButton = () => {
         </figure>
       </span>
 
-      <span>
+      <span className="category-card">
         <figure>
           <img src={HealcareIcon} alt=""/>
           <figcaption>
@@ -54,7 +54,7 @@ const CategoriesButton = () => {
         </figure>
       </span>
 
-      <span>
+      <span className="category-card">
         <figure>
           <img src={RunIcon} alt=""/>
           <figcaption>
@@ -63,7 +63,7 @@ const CategoriesButton = () => {
         </figure>
       </span>
 
-      <span>
+      <span className="category-card">
         <figure>
           <img src={FashionIncon} alt=""/>
           <figcaption>

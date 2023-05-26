@@ -1,8 +1,12 @@
 @use "../../styles/variables/colors";
 
 .brands-galery{
-
+    width: 100%;
+    margin-top: 16.3rem;
+    margin-bottom: 11rem;
+    
     h3{
+        margin-bottom: 5.7rem;
         color: colors.$primary-color;
         text-align: center;
         font-size: 3rem;
@@ -12,7 +16,7 @@
     .brand-bubble-icon-container{
         display: flex;
         align-items: center;
-        justify-content: space-around
+        justify-content: space-between
     }
 
 }

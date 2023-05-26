@@ -12,9 +12,9 @@ const Menu = ({ menuInfo, ...rest}: MenuProps) => {
   return (
     <nav>
       <ul>
-        {menuInfo.map( menuItem => {
+        {menuInfo.map( (menuItem, index) => {
           return (
-            <li>
+            <li key={index}>
               <Link to={menuItem.link} >
                 {menuItem.label}
               </Link>

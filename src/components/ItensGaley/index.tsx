@@ -16,7 +16,11 @@ const ItensGalery = ({showFilters,  productList}: ItensGaleryProps) => {
   return (
     <div className='itens-galery-container'>
       <div className='itens-filter'>
-        <p className='galery-title'>Produtos Relacionados</p>
+        <span className='title-area'>
+          <hr />
+          <p className='galery-title'>Produtos Relacionados</p>
+          <hr />
+        </span>
         {showFilters ? (
           <ul>
             <li>CELULAR</li>
@@ -35,7 +39,7 @@ const ItensGalery = ({showFilters,  productList}: ItensGaleryProps) => {
       <ItemsSlider >
         {productList.map((product, index) =>{
           return (
-            <ItemCard productName={product.productName}
+            <ItemCard key={index} productName={product.productName}
               descriptionShort={product.descriptionShort}
               photo={product.photo}
               price={product.price}

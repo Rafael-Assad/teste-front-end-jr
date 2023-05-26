@@ -4,4 +4,10 @@ main{
     width: 100%;
     min-height: 60vh;
     background-color: colors.$white-background;
+
+    .content-area{
+        width: 100%;
+        padding: 3.4rem 8.7rem;
+        padding-bottom: 17rem;
+    }
 }

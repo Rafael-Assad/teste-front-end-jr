@@ -27,19 +27,21 @@ const Home = () => {
     <main>
       <Banner/>
 
-      <CategoriesButton/>
+      <div className="content-area">
+        <CategoriesButton/>
 
-      <ItensGalery showFilters={true} teste={productList} />
+        <ItensGalery showFilters={true} productList={productList} />
 
-      <BigShortcutCarsGroup headline="Parceiros"/>
+        <BigShortcutCarsGroup headline="Parceiros"/>
 
-      <ItensGalery showFilters={false} teste={productList}  />
+        <ItensGalery showFilters={false} productList={productList}  />
 
-      <BigShortcutCarsGroup headline="Produtos"/>
+        <BigShortcutCarsGroup headline="Produtos"/>
 
-      <BrandsGalery/>
+        <BrandsGalery/>
 
-      <ItensGalery showFilters={false} teste={productList}  />
+        <ItensGalery showFilters={false} productList={productList}  />
+      </div>
     </main>
   )
 }

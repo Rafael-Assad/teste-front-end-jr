@@ -1,11 +1,11 @@
 
 .products-slider{
+    width: 100%;
     position: relative;
     .itens-galery{
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 5vw;
+        justify-content: space-between;
     }
 
     .slider-arrows{
@@ -15,11 +15,11 @@
 
         }
         .left-arrow{
-            left: 0;
+            left: -4rem;
         }
         
         .right-arrow{
-            right: 0;
+            right: -4rem;
         }
     }
 }
