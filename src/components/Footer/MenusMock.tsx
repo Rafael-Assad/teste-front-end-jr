@@ -13,22 +13,22 @@ export const InfosMenuMock:MenuItem[] = [
     },
     {
         id: 3,
-        label: 'Prazos de Entrega',
+        label: 'PRAZOS DE ENTREGA',
         link:'*'
     },
     {
         id: 4,
-        label: 'Formas de Pagamento',
+        label: 'FORMAS DE PAGAMENTO',
         link:'*'
     },
     {
         id: 5,
-        label: 'Política de privacidade',
+        label: 'POLITICA DE PRIVACIDADE',
         link:'*'
     },
     {
         id: 6,
-        label: 'Trocas e Devoluções',
+        label: 'TROCAS E DEVOLUÇOES',
         link:'*'
     },
 ]
@@ -36,7 +36,7 @@ export const InfosMenuMock:MenuItem[] = [
 export const AboutMenuMock:MenuItem[] = [
     {
         id: 1,
-        label: 'Conheça',
+        label: 'CONHEÇA',
         link:'*'
     },
     {
@@ -46,22 +46,7 @@ export const AboutMenuMock:MenuItem[] = [
     },
     {
         id: 3,
-        label: 'Indicação e Desconto',
-        link:'*'
-    },
-    {
-        id: 4,
-        label: 'Formas de Pagamento',
-        link:'*'
-    },
-    {
-        id: 5,
-        label: 'Política de privacidade',
-        link:'*'
-    },
-    {
-        id: 6,
-        label: 'Trocas e Devoluções',
+        label: 'INDICAÇAO E DESCONTO',
         link:'*'
     },
 ]

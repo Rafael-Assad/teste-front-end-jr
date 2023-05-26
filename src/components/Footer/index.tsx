@@ -28,36 +28,71 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-menus">
-        <section>
-          sobre nos
-          <Menu menuInfo={AboutMenuMock} />
-          <span>
-            <img src={FacebookIcon} alt="" />
-            <img src={InstagramIcon} alt="" />
-            <img src={YouTubeIcon} alt="" />
-          </span>
-        </section>
+        <div className="sitemap-and-payment-methods">
+          <section className="about-area">
+            <h3>Sobre nós</h3>
 
-        <section>
-          informacoes uteis
-          <Menu menuInfo={InfosMenuMock} />
-        </section>
+            <Menu menuInfo={AboutMenuMock} />
 
-        <section className="payment-methods">
-          formas de pagamento
-          <span className="payment-methods-icons">
-            <img src={VisaLogo} alt="" />
-            <img src={EloLogo} alt="" />
-            <img src={AleloLogo} alt="" />
-            <img src={DinnersLogo} alt="" />
-            <img src={IfoodLogo} alt="" />
-            <img src={MastercardLogo} alt="" />
-            <img src={PixLogo} alt="" />
-            <img src={AmexLogo} alt="" />
-            <img src={TicketLogo} alt="" />
-            <img src={SodexoLogo} alt="" />
-          </span>
-        </section>
+            <span className="social-icons">
+              <img src={FacebookIcon} alt="" />
+              <img src={InstagramIcon} alt="" />
+              <img src={YouTubeIcon} alt="" />
+            </span>
+          </section>
+
+          <section>
+            <h3>INFORMAÇÕES ÚTEIS</h3>
+
+            <Menu menuInfo={InfosMenuMock} />
+          </section>
+
+          <section className="payment-methods">
+            <h3>FORMAS DE PAGAMENTO</h3>
+
+            <span className="payment-methods-icons">
+              <figure>
+                <img src={VisaLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={EloLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={AleloLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={DinnersLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={IfoodLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={MastercardLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={PixLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={AmexLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={TicketLogo} alt="" />
+              </figure>
+
+              <figure>
+                <img src={SodexoLogo} alt="" />
+              </figure>
+            </span>
+          </section>
+        </div>
 
         <section>
           <NewsLetterSignBox/>

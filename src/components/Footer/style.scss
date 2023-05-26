@@ -9,16 +9,26 @@ footer{
     .footer-menus{
         padding: 3.6rem 7.8rem;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
 
-        section{
+        .sitemap-and-payment-methods {
+            width: 50%;
             display: flex;
             align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
+            justify-content: space-between;
+
+            h3{
+                margin: 3.4rem 0;
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+            
             nav{
                 li{
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    line-height: 3.2rem;
                     a{
                         color: colors.$white-text-highlight;
     
@@ -29,17 +39,47 @@ footer{
                 }
             }
 
-            &.payment-methods{
-                border: 1px solid white;
+            .about-area{
+                height: 28rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                .social-icons{ 
+                    width: 100%;
+                    margin-top: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+
+            .payment-methods{
                 width: 200px;
-                .payment-methods-icons{
+
+                .payment-methods-icons{ 
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     flex-wrap: wrap;
-                    gap: 10px;
+
+                    figure{
+                        width: 30%;
+                        height: 4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
             }
+        }
+
+        section{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
         }
     }
 
@@ -53,6 +93,9 @@ footer{
 
         .signature-logos{
             width: 20vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 }
