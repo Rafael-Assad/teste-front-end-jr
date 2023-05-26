@@ -1,11 +1,17 @@
-import React from 'react'
 import BigShortcutCards from '../BigShortcutCards'
 
-const BigShortcutCarsGroup = () => {
+import "./style.scss"
+
+interface BigShortcutCarsGroupProps {
+    headline: string;
+}
+
+const BigShortcutCarsGroup = ({headline}:BigShortcutCarsGroupProps) => {
   return (
-    <div>
-        <BigShortcutCards title='Produtos'/>
-        <BigShortcutCards title='Produtos'/>
+    <div className='big-cards-group'>
+        <BigShortcutCards title={headline}/>
+
+        <BigShortcutCards title={headline}/>
     </div>
   )
 }

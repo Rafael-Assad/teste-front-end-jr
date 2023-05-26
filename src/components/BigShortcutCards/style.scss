@@ -1,0 +1,31 @@
+@use "../../styles/variables/colors";
+
+.big-card{
+    width: 59.5rem;
+    height: 35rem;
+    padding: 3.9rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(to bottom, #0000, #0005, #000),url("../../assets/backgroundImages/tecsale.png");
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    h3{
+        color: colors.$white-text-highlight;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    p{
+        width: 18rem;
+        color: colors.$white-text-highlight;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+}

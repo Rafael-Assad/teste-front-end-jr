@@ -13,11 +13,11 @@ const Home = () => {
 
       <ItensGalery showFilters={true}/>
 
-      <BigShortcutCarsGroup/>
-      
+      <BigShortcutCarsGroup headline="Parceiros"/>
+
       <ItensGalery showFilters={false}/>
 
-      <BigShortcutCarsGroup/>
+      <BigShortcutCarsGroup headline="Produtos"/>
 
       <ItensGalery showFilters={false}/>
     </main>

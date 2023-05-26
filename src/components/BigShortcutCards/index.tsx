@@ -1,15 +1,17 @@
 import Button from "../Button"
 
+import "./style.scss"
+
 interface BigShortcutCardsProps {
   title: string;
 }
 
 const BigShortcutCards = ({title}: BigShortcutCardsProps) => {
   return (
-    <div>
+    <div className="big-card">
       <h3>{title}</h3>
 
-      <p></p>
+      <p>Lorem ipsum dolor sit amet, consectetur</p>
 
       <Button buttonName="CONFIRA" />
     </div>
