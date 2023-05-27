@@ -101,9 +101,9 @@ const Footer = () => {
 
       <div className="footer-disclaimer">
         <span>
-        Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.
+          COPYRIGHT © 2019. TODOS OS DIREITOS RESERVADOS. TODAS AS MARCAS E SUAS IMAGENS SÃO DE PROPRIEDADE DE SEUS RESPECTIVOS DONOS
         <br/>
-        É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.
+        É VEDADA A REPRODUÇÃO, TOTAL OU PARCIAL, DE QUALQUER CONTEÚDO SEM EXPRESSA AUTORIZAÇÃO
         </span>
 
         <span className="signature-logos">

@@ -6,7 +6,7 @@ const NewsLetterSignBox = () => {
     <div className="newsletter-sign-box-container">
       <p className="main-catchphrase">
         CADASTRE-SE E RECEBA NOSSAS
-        <strong> NOVIDADES E PROMOÇOES</strong>
+        <strong> NOVIDADES E PROMOÇÕES</strong>
       </p>
 
       <p className="details">

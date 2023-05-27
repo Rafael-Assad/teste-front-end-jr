@@ -28,7 +28,7 @@ export const InfosMenuMock:MenuItem[] = [
     },
     {
         id: 6,
-        label: 'TROCAS E DEVOLUÇOES',
+        label: 'TROCAS E DEVOLUÇÕES',
         link:'*'
     },
 ]
@@ -46,7 +46,7 @@ export const AboutMenuMock:MenuItem[] = [
     },
     {
         id: 3,
-        label: 'INDICAÇAO E DESCONTO',
+        label: 'INDICAÇÃO E DESCONTO',
         link:'*'
     },
 ]

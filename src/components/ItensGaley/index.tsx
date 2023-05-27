@@ -24,7 +24,7 @@ const ItensGalery = ({showFilters,  productList}: ItensGaleryProps) => {
         {showFilters ? (
           <ul>
             <li>CELULAR</li>
-            <li>ACESSORIOS</li>
+            <li>ACESSÓRIOS</li>
             <li>TABLETS</li>
             <li>NOTEBOOKS</li>
             <li>TVS</li>
